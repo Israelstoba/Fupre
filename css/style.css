@@ -3,6 +3,7 @@
   --clr-white: #fff;
   --clr-primary: #12234a;
   --clr-light: #5687fa;
+  --clr-text-dark: #555;
   --clr-transparent: #5687fa10;
   --clr-primary-transparent: rgba(86, 135, 250, 0.755);
   --clr-danger: rgb(255, 162, 162);
@@ -311,12 +312,12 @@ a {
   text-align: center;
 }
 
-.mail-bg {
+.message-container {
   width: 100%;
-  height: 100%;
-  min-height: auto;
-  padding: 7rem 1rem;
-  background: var(--clr-primary);
+  height: 100vh;
+  min-height: 100%;
+  text-align: center;
+  padding: 5rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,86 +329,36 @@ a {
           align-items: center;
 }
 
-.mail-bg .mail-container {
-  width: 100%;
+.message-box {
   max-width: 760px;
-  padding: 2rem 1rem;
-  background: var(--clr-light);
-  border-radius: 10px;
+  background-color: var(--clr-transparent);
   -webkit-box-shadow: var(--box-shadow);
           box-shadow: var(--box-shadow);
+  padding: 4rem 2rem;
+  color: var(--clr-text-dark);
 }
 
-.mail-container-top,
-.mail-container-bottom {
-  background: var(--clr-white);
-  padding: 2rem 1rem;
-  border-radius: 10px;
-  text-align: center;
-  margin: 2rem 0;
+.check-img {
+  width: 30%;
 }
 
-.msg-wrapper {
-  width: 100%;
-  text-align: center;
-  padding: 2.5rem 0;
-  background: var(--clr-primary);
-  border-radius: 10px;
-  margin: 1rem 0 3rem;
-}
-
-.msg-wrapper .envelope {
-  color: var(--clr-white);
-  font-size: 3rem;
-}
-
-.logo {
-  text-align: start;
-}
-
-.body-text {
-  font-size: 1.3rem;
-  margin: 3rem 0 2rem;
-}
-
-.big-title,
-.small-title {
+.big-text {
   color: var(--clr-primary);
+  font-size: 2.8rem;
+  line-height: normal;
+  margin: 1rem 0 2rem;
 }
 
-.social-container {
-  padding: 2rem 0;
-}
-
-.social-container .social-link {
-  font-size: 1.5rem;
-  margin: 0 1rem;
-  color: var(--clr-primary);
-}
-
-.social-container .social-link:hover {
-  font-size: 1.575rem;
-}
-
-.copyright {
-  color: var(--clr-footer);
+@media (max-width: 400px) {
+  .check-img {
+    width: 80%;
+  }
 }
 
 @media (max-width: 570px) {
   .input-content-container {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-  }
-}
-
-@media (max-width: 375px) {
-  .btn {
-    width: 100%;
-    font-size: 0.8rem;
-  }
-  .big-title,
-  h1 {
-    font-size: 1.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
